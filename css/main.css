@@ -1,0 +1,171 @@
+ body {
+     background-color: #121212;
+     /* fondo oscuro */
+ }
+
+ .card {
+     background-color: transparent
+         /* card oscuro */
+ }
+
+ /* Floating labels personalizados */
+ .form-floating>.form-control {
+     background: transparent;
+     border: 1px solid #999;
+     /* contorno gris */
+     border-radius: 5px;
+     padding: 0.65rem 0.65rem;
+     color: #fff;
+     /* texto al escribir blanco */
+     height: 40px;
+ }
+
+ /* Placeholder (necesario pero invisible) */
+ .form-floating>.form-control::placeholder {
+     color: transparent;
+ }
+
+ /* Label flotante */
+ .form-floating>label {
+     color: #999;
+ }
+
+ /* Cuando el input tiene foco o texto */
+ .form-floating>.form-control:focus,
+ .form-floating>.form-control:not(:placeholder-shown) {
+     color: #fff;
+     border-color: #bbb;
+ }
+
+ .form-floating>.form-control:focus~label,
+ .form-floating>.form-control:not(:placeholder-shown)~label {
+     color: #ccc;
+ }
+
+ /* Estilo del botón de Instagram Login */
+ .btn-instagram {
+     background-color: #064d7c;
+     /* azul de Instagram */
+     color: #ccc;
+     font-weight: 600;
+     border: none;
+     border-radius: 8px;
+     padding: 8px 0;
+     width: 100%;
+     font-size: 14px;
+     cursor: pointer;
+     transition: background-color 0.2s ease, filter 0.2s ease;
+ }
+
+ /* Hover */
+.btn-instagram:hover {
+    background-color: #007ac1; /* azul más oscuro al pasar el mouse */
+    filter: brightness(1.05);
+}
+
+/* Focus */
+.btn-instagram:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 149, 246, 0.4);
+}
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    color: #8e8e8e; /* gris estilo Instagram */
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.separator .line {
+    flex: 1;
+    height: 1px;
+    background-color: #414040;
+    margin: 0 10px;
+}
+
+.negrita{
+    font-weight: 600;
+}
+
+
+.forgot-password {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.forgot-password a {
+  font-size: 12px;
+  color: #ffffff;   /* Azul de Instagram */
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.signup-box {
+  background-color: transparent
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.signup-box p {
+  font-size: 14px;
+  margin: 0;
+  color: #fff;
+}
+
+.signup-box a {
+  color: #0095f6;  /* Azul Instagram */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-box a:hover {
+  text-decoration: underline;
+}
+
+ /* Footer general */
+ footer {
+     background-color: #fafafa;
+     /* fondo claro como Instagram login */
+     color: #ccc;
+     /* texto gris tenue */
+     padding: 20px 0;
+     font-family: Arial, sans-serif;
+     font-size: 11px;
+ }
+
+ /* Contenedor de enlaces */
+ footer .footer-links {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 10px;
+     margin-bottom: 10px;
+ }
+
+ /* Estilo de los enlaces */
+ footer .footer-links a {
+     color: #999;
+     text-decoration: none;
+     transition: color 0.2s ease;
+ }
+
+ /* Hover de los enlaces */
+ footer .footer-links a:hover {
+     color: #000;
+     /* cambia a negro al pasar el mouse */
+     text-decoration: underline;
+ }
+
+ /* Copyright centrado */
+ footer .footer-copy {
+     text-align: center;
+     font-size: 11px;
+     color: #8e8e8e;
+ }
